@@ -2,6 +2,8 @@
 
 中文 | [English](README.en.md)
 
+[![npm version](https://img.shields.io/npm/v/dsh-split-view.svg?style=flat-square)](https://www.npmjs.com/package/dsh-split-view)
+
 一个插件把 DeepSeek Harness 主窗口变成多个分屏，同时查看多个会话的状态。
 
 有过【同时跑多个任务】经历的同学应该能感受这种痛苦：多个标签切来切去，很心累。

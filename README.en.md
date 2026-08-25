@@ -2,6 +2,8 @@
 
 [中文](README.md) | English
 
+[![npm version](https://img.shields.io/npm/v/dsh-split-view.svg?style=flat-square)](https://www.npmjs.com/package/dsh-split-view)
+
 One plugin that turns the DeepSeek Harness main window into split panes, so you can watch several sessions at once.
 
 If you have ever run several tasks at the same time, you know the pain: switching between tabs over and over.
