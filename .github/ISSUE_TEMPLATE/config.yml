@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 用法与支持 / Usage & support
+    url: https://github.com/luckybilly/dsh-split-view/discussions
+    about: 用法、配置、与其它插件集成的问题，优先在这里问。/ Usage, config and integration questions are better asked here.

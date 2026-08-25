@@ -1,0 +1,29 @@
+name: Feature request / 功能建议
+description: An idea for something the plugin should do. / 希望插件多做什么。
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解决的问题 / The problem
+      description: 描述你在用分屏时遇到的场景或不便。/ Describe the situation or friction you run into while using split panes.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你的想法 / Your idea
+      description: 你希望它怎么工作。有别的工具做过类似的事，也可以贴上来。/ How you'd like it to behave. Links to prior art are welcome.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: 这属于哪一类 / Which area
+      options:
+        - label: 布局 / 快捷键 / Layout & shortcuts
+        - label: 面板标题栏 / Title bar
+        - label: 设置 / Settings
+        - label: 供其它插件调用的服务 / Service API
+        - label: 其它 / Other

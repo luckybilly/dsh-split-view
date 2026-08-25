@@ -1,0 +1,69 @@
+name: Bug report / 缺陷反馈
+description: Something is not working as documented. / 行为和文档说好的不一样。
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢花时间反馈。把下面几项填全，能大幅缩短定位时间。
+        Thanks for the report. Filling these in saves a lot of back-and-forth.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: 插件版本 / Plugin version
+      description: "npm 包版本或仓库 commit，例如 0.2.1 / the npm version or repo commit, e.g. 0.2.1"
+    validations:
+      required: true
+  - type: input
+    id: dsh-version
+    attributes:
+      label: DSH 版本 / DSH version
+      description: "`dsh --version` 的输出 / output of `dsh --version`, e.g. 0.1.0-rc.6"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器 / Browser
+      description: "例如 Chrome 130 / Safari 17 / e.g. Chrome 130 / Safari 17"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      description: 从启动 `dsh web` 开始，一步步写清楚。/ Start from `dsh web` and list each step.
+      placeholder: |
+        1. dsh plugin --profile web add dsh-split-view
+        2. dsh web
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望与实际 / Expected vs. actual
+      description: 你期望发生什么，实际发生了什么。/ What you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 控制台 / 后端日志 / Console & backend logs
+      description: 浏览器控制台的报错、后端日志的相关段落。敏感路径可自行打码。/ Relevant browser-console errors and backend log lines. Redact sensitive paths if needed.
+      render: shell
+    validations:
+      required: false
+  - type: dropdown
+    id: pane-count
+    attributes:
+      label: 出问题时大概有几个面板 / Roughly how many panes were open
+      options:
+        - "1"
+        - "2-3"
+        - "4-9"
+        - ">9"
+        - 不确定 / Not sure
+    validations:
+      required: false
