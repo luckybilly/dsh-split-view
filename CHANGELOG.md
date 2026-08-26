@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.3 — 2026-08-26
+
+- Ship the demo assets (demo.gif, demo2.png, demo3.png) inside the package so the README images render on npmjs.com. Package size grows from 48KB to about 8.9MB.
+
+## 0.2.2 — 2026-08-26
+
+- Removed a temporary agent-teams demo block that accidentally shipped in 0.2.1: it polled the dsh-agent-teams state route on boot and auto-split member sessions into panes. No pane opens by itself anymore.
+
 ## 0.2.1 — 2026-08-25
 
 - Default "split right" shortcut changed from ⇧⌘H to ⇧⌘D (reachable with the left hand alone).
