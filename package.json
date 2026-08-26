@@ -1,6 +1,6 @@
 {
   "name": "dsh-split-view",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Multi-session split view for the DeepSeek Harness web GUI: the top window shadows the root slot with a resizable split container; each pane is an iframe running a full DSH client pinned to its own session, with per-pane title bars, LRU hibernation and a dual-loopback origin pool.",
   "license": "MIT",
   "type": "module",
@@ -18,7 +18,10 @@
     "lib/index.js",
     "lib/client.js",
     "cordis.patch.yml",
-    "api.md"
+    "api.md",
+    "demo.gif",
+    "demo2.png",
+    "demo3.png"
   ],
   "author": "dsh-split-view contributors",
   "repository": {
