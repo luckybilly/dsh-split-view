@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.4 — 2026-08-26
+
+- Settings: version footer at the bottom of the split-view section — current version, a live latest-version badge (queried from npmmirror/npmjs directly in the browser), and an upgrade entry that copies the install command when a newer version exists.
+
 ## 0.2.3 — 2026-08-26
 
 - Ship the demo assets (demo.gif, demo2.png, demo3.png) inside the package so the README images render on npmjs.com. Package size grows from 48KB to about 8.9MB.
