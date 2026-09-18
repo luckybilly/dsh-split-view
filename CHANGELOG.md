@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.5 — 2026-09-18
+
+- Compat: DSH ≥0.1.2-alpha.1 split `dsh-client-runtime` into `dsh-client-modules` / `dsh-client-store` / `dsh-client-locale` and froze the platform module table to the new seed names, so the old static `require("@deepseek-ai/dsh-client-runtime/client")` misses the module table on new hosts ("Failed to load plugins"). Client bundle now falls back across both seeds (`dsh-client-store` first, legacy second), keeping one build working on both host generations — same technique as dsh-dream-skin 9.x (upstream issues #41/#43).
+
 ## 0.2.4 — 2026-08-26
 
 - Settings: version footer at the bottom of the split-view section — current version, a live latest-version badge (queried from npmmirror/npmjs directly in the browser), and an upgrade entry that copies the install command when a newer version exists.
