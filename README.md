@@ -37,6 +37,8 @@ dsh web   # 重启生效
 
 卸载用 `dsh plugin --profile web remove dsh-split-view`，重启恢复单窗口。插件本身如果出问题，boot 会停下来报错，不会静默白屏，所以卸载也就是紧急恢复的办法。
 
+**兼容范围**：dsh `0.1.0-rc.6` 起至 `0.2.x`，一份构建同时适配两代宿主。dsh 0.2.0 起有 peer 门禁，若装的是 0.2.5 及更早版本，启动日志会出现 `skipping profile bundle "dsh-split-view"`、界面上看不到分屏按钮——升级到 0.2.6 及以上即可。
+
 ## 默认快捷键（支持在设置中自定义）
 
 | 键（macOS ⌘，Windows/Linux Ctrl） | 动作 |

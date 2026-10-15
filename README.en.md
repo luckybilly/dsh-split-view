@@ -37,6 +37,8 @@ Install from source for local development: `dsh plugin --profile web add -w /pat
 
 Uninstall with `dsh plugin --profile web remove dsh-split-view`, restart, and the window is back to normal. If the plugin itself breaks, boot stops with an error instead of a silent blank page, so uninstalling is also the emergency recovery path.
 
+**Compatibility**: dsh `0.1.0-rc.6` through `0.2.x` — one build spans both host generations. dsh 0.2.0 added a peer-dependency gate, so on 0.2.5 or earlier the boot log shows `skipping profile bundle "dsh-split-view"` and no split buttons appear. Upgrade to 0.2.6 or later.
+
 ## Default shortcuts (customizable in Settings)
 
 | Key (⌘ on macOS, Ctrl on Windows/Linux) | Action |

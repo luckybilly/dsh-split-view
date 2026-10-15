@@ -165,7 +165,7 @@ await sv.applyLayout(lay.tree)
 await sv.open('session-…', { pane: paneId })
 ```
 
-活面板**热切换**：顶层通过 postMessage 通知面板自己执行 `sessions.open`，不重载 iframe，面板内的客户端状态保留。休眠面板更新启动种子，下次唤醒时生效。会话不在列表里会抛错（列表基线未就绪时跳过校验，由面板侧兜底）。
+活面板**热切换**：顶层通过 postMessage 通知面板自己导航到目标会话（dsh 0.1.x 走 `sessions.open`，0.2.x 起走 `ctx.uiWorkspace.openSession`），不重载 iframe，面板内的客户端状态保留。休眠面板更新启动种子，下次唤醒时生效。会话不在列表里会抛错（列表基线未就绪时跳过校验，由面板侧兜底）。
 
 ### 新建会话
 
