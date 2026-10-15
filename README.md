@@ -67,6 +67,8 @@ dsh web   # 重启生效
 
 分屏能力整体暴露成了一个 Cordis 服务：面板操作、面板×会话操作（加载指定会话、发消息、改名、换模型、取消回合）、查询与订阅。面向集成方的服务 API 见 [api.md](./api.md)。
 
+如果你要实现类似于 Claude Code 的 agent teams的插件，可以通过本插件提供的 api 来实现等同于 [agent teams 的 Split-pane 模式](https://code.claude.com/docs/zh-CN/agent-teams#choose-a-display-mode)的分屏显示功能。
+
 ## 协议
 
 MIT © dsh-split-view contributors
